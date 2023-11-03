@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors')
 const mysql = require('mysql2/promise');
-const config = require('../server/config');
+const config = require('./config');
 
 const app = express()
 
@@ -23,6 +23,4 @@ app.get("/", async function (req, res) {
   }
 })
 
-
 app.listen(port)
-
